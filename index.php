@@ -1,84 +1,33 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+// đường dẫn dùng $_GET
+// domain.com?name=Tính&age=18&address=Cần%20Thơ
+// $_GET['name'] giá trị sẽ là Tính
+// $_GET['age'] giá trị sẽ là 18
+// $_GET['address'] giá trị sẽ là Cần Thơ
+// echo $_GET['address'];
 
-// $age = 8;
-// switch($age){
-//     case 7:
-//     case 8:
-//     case 9:
-//     case 10: 
-//     case 11:
-//         echo "Học cấp 1";
-//         break;
-//     case 12:
-//         echo "Học cấp 2";
-//         break;
-//     case 16:
-//         echo "học Cấp 3";
-//         break;
-//     default:
-//         echo "Không thuộc trường hợp nào ở trên";
-// }
+require "Views/layouts/header.php";
 
+if(isset($_GET['pages']) && !empty($_GET['pages'])){
+    switch($_GET['pages']){
+        case "home":
+            require "Views/pages/home.php";
+            break;
+        case "chi-tiet-san-pham":
+            require "Views/pages/chi-tiet-san-pham.php";
+            break;
 
-// $age = false;
-// while($age){
-//     echo "Không chạy vào đây nhé?";
-// }
-
-// do{
-//     echo "Có chạy vào đây !!!!";
-// }while($age);
-
-
-// $array = [
-//     "Táo",
-//     "Cam",
-//     "Ổi",
-//     "Xoài",
-//     "Sầu Riêng"
-// ];
-
-// echo $array[2];
-// echo $array[4];
-
-$gio_hang = [
-    [
-        "Táo",
-        "Cam",
-        "Ổi"
-    ],
-    [
-        "Xoài",
-        "Sầu Riêng"
-    ]
-];
-var_dump($gio_hang);
-echo "<hr>";
-echo $gio_hang[1][1]; //Sầu Riêng
-echo "<hr>";
+        default:
+            echo "404";
+            break;
+    }
+}
 
 
 
-
-$classes = [
-    [
-        "name" => "Luận",
-        "age" => 18,
-        "address" => "Cần Thơ"
-    ],
-    [
-        "name" => "Quí",
-        "age" => 20,
-        "address" => "Kiên Giang"
-    ],
-    [
-        "name" => "Vy",
-        "age" => 18,
-        "address" => "Vĩnh Long"
-    ]
-];
-var_dump($classes);
-echo "<hr>";
-
-echo $classes[1]["address"]; //Kiên Giang
-echo "<hr>";
+require "Views/layouts/footer.php";
+// include, include_once, require, require_once
+   
