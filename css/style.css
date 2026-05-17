@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.text1 {
+    text-align: center;
+    color: #dd4949;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #c54545;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.product-list {
+    /* display: flex; */
+    border: 1px solid #8d4141;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    background-color: #fff;
+    grid-template-columns: repeat(2, 1fr);
+    display:grid;
+
+
+}
+
+.product-item {
+    border: 1px solid #8d4141;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}

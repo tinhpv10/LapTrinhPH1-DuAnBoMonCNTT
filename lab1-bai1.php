@@ -1,28 +1,28 @@
 <?php
 
-$products = [
+$product = [
     [
-        "id" => 1,
-        "name" => "Hồ Điệp Và Kình Ngư",
-        "price" => 104000,
-        "image" => "https://cdn1.fahasa.com/media/catalog/product/b/i/bia-2d_ho-diep-va-kinh-ngu_17307.jpg"
+        "name" => "Laptop Acer",
+        "price" => 199,
+        "img" => "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/acer_aspire_go_14_ai_ag14_71m_52lh_01_fafdeb827d.png",
+        "desc" => "Máy tính giá rẻ"
     ],
     [
-        "id" => 2,
-        "name" => "Sứ Mệnh Hail Mary - Project Hail Mary",
-        "price" => 136000,
-        "image" => "https://cdn1.fahasa.com/media/catalog/product/b/_/b_a-1_7_12.jpg"
+        "name" => "Samsung Galaxy Note 20 Ultra",
+        "price" => 500,
+        "img" => "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-note-20-ultra-5g.png",
+        "desc" => "Điện thoại thông minh"
     ],
     [
-        "id" => 3,
-        "name" => "Người Đàn Ông Mang Tên OVE (Tái Bản)",
-        "price" => 115200,
-        "image" => "https://cdn1.fahasa.com/media/catalog/product/8/9/8934974182375.jpg"
+        "name" => "HP Pavilion",
+        "price" => 1000,
+        "img" => "https://laptop88.vn/media/product/6517_hp_pavilion_15_eg0073tu_2p1n4pa_4.jpg",
+        "desc" => "Laptop hiệu năng cao"
+    ],
+    [
+        "name" => "iPhone 17 Pro Max",
+        "price" => 1300,
+        "img" => "https://www.didongmy.com/vnt_upload/product/09_2025/thumbs/(600x600)_iphone_17_pro_max_blue_thumb_didongmy_1.jpg",
+        "desc" => "Điện thoại cao cấp"
     ],
 ];
-
-foreach($products as $pro){
-    echo $pro['name']."<hr>";
-    echo number_format($pro['price'])."<hr>";
-    echo "<img src='".$pro['image']."' >";
-}
