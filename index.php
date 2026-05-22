@@ -8,13 +8,17 @@ error_reporting(E_ALL);
 // $_GET['age'] giá trị sẽ là 18
 // $_GET['address'] giá trị sẽ là Cần Thơ
 // echo $_GET['address'];
+require_once "Controllers/HomeController.php";
+
 
 require "Views/layouts/header.php";
 
-if(isset($_GET['pages']) && !empty($_GET['pages'])){
-    switch($_GET['pages']){
+// router cơ bản
+if (isset($_GET['pages']) && !empty($_GET['pages'])) {
+    switch ($_GET['pages']) {
         case "home":
-            require "Views/pages/home.php";
+            $controller = new HomeController();
+            $controller->renderGiaoDien();
             break;
         case "chi-tiet-san-pham":
             require "Views/pages/chi-tiet-san-pham.php";
@@ -24,10 +28,12 @@ if(isset($_GET['pages']) && !empty($_GET['pages'])){
             echo "404";
             break;
     }
+} else {
+    $controller = new HomeController();
+    $controller->renderGiaoDien();
 }
 
 
 
 require "Views/layouts/footer.php";
 // include, include_once, require, require_once
-   
