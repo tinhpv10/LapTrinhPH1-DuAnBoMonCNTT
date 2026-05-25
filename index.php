@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 // $_GET['address'] giá trị sẽ là Cần Thơ
 // echo $_GET['address'];
 require_once "Controllers/HomeController.php";
+require_once "Controllers/ArchiveProductController.php";
 
 
 require "Views/layouts/header.php";
