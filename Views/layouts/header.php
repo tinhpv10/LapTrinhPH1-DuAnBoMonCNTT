@@ -1,54 +1,203 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Mobile Metas -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>ASM_NHOM7</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon"
+        href="assets/images/favicon.png"
+        type="image/png">
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet"
+        type="text/css"
+        href="assets/css/bootstrap.css" />
+
+    <!-- font awesome -->
+    <link href="assets/css/font-awesome.min.css"
+        rel="stylesheet" />
+
+    <!-- custom styles -->
+    <link href="assets/css/style.css"
+        rel="stylesheet" />
+
+    <!-- responsive -->
+    <link href="assets/css/responsive.css"
+        rel="stylesheet" />
+
 </head>
 
-
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+    <div class="hero_area">
+
+        <!-- HEADER -->
+        <header class="header_section">
+
             <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="https://inkythuatso.com/uploads/thumbnails/800/2021/12/logo-fpt-polytechnic-inkythuatso-09-13-08-21.jpg" alt="Bootstrap" height="90">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Giới thiệu</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dịch vụ
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Đào tạo AI</a></li>
-                                <li><a class="dropdown-item" href="#">Thiết kế website</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Phát triển phần mềm</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-disabled="true">Liên hệ</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
-                    </form>
-                </div>
+
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+
+                    <!-- LOGO -->
+                    <a class="navbar-brand"
+                        href="index.php?pages=home">
+
+                        <img width="220"
+                            src="assets/images/logo.png"
+                            alt="logo" />
+
+                    </a>
+
+                    <!-- MOBILE BUTTON -->
+                    <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <span class=""></span>
+
+                    </button>
+
+                    <!-- MENU -->
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+
+                        <ul class="navbar-nav">
+
+                            <!-- HOME -->
+                            <li class="nav-item active">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=home">
+
+                                    Home
+
+                                </a>
+
+                            </li>
+
+                            <!-- PRODUCTS -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=products">
+
+                                    Products
+
+                                </a>
+
+                            </li>
+
+                            <!-- CART -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=cart">
+
+                                    Cart
+
+                                </a>
+
+                            </li>
+
+                            <!-- CHECKOUT -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=checkout">
+
+                                    Checkout
+
+                                </a>
+
+                            </li>
+
+                            <!-- LOGIN -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=login">
+
+                                    Login
+
+                                </a>
+
+                            </li>
+
+                            <!-- REGISTER -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=register">
+
+                                    Register
+
+                                </a>
+
+                            </li>
+
+                            <!-- PROFILE -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=profile">
+
+                                    My Account
+
+                                </a>
+
+                            </li>
+
+                            <!-- CART ICON -->
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.php?pages=cart">
+
+                                    <i class="fa fa-shopping-cart"></i>
+
+                                </a>
+
+                            </li>
+
+                            <!-- SEARCH -->
+                            <form class="form-inline">
+
+                                <button class="btn nav_search-btn"
+                                    type="submit">
+
+                                    <i class="fa fa-search"
+                                        aria-hidden="true"></i>
+
+                                </button>
+
+                            </form>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+
             </div>
-        </nav>
-    </header>
+
+        </header>
+        <!-- END HEADER -->
