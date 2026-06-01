@@ -2,6 +2,40 @@
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
+
+require_once "Models/Database.php";
+$db = new Database();
+$pdo = $db->connect();
+
+
+// $sql = "SELECT * FROM `products`;";
+// $stmt = $pdo->query($sql);
+// $rows = $stmt->fetchAll();
+// var_dump($rows);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+die;
 // đường dẫn dùng $_GET
 // domain.com?name=Tính&age=18&address=Cần%20Thơ
 // $_GET['name'] giá trị sẽ là Tính
