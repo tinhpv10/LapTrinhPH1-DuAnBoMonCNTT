@@ -10,6 +10,10 @@ error_reporting(E_ALL);
 // echo $_GET['address'];
 require_once "Controllers/HomeController.php";
 require_once "Controllers/ArchiveProductController.php";
+require_once "Controllers/SingleProductController.php";
+require_once "Controllers/CartController.php";
+require_once "Controllers/CheckoutController.php";
+require_once "Controllers/UserController.php";
 
 
 require "Views/layouts/header.php";
@@ -21,10 +25,28 @@ if (isset($_GET['pages']) && !empty($_GET['pages'])) {
             $controller = new HomeController();
             $controller->renderGiaoDien();
             break;
-        case "chi-tiet-san-pham":
-            require "Views/pages/chi-tiet-san-pham.php";
+        case "danh-sach-san-pham":
+            $controller = new ArchiveProductController();
+            $controller->renderGiaoDienDanhMucSanPham();
             break;
 
+        case "chi-tiet-san-pham":
+            $controller = new SingleProductController();
+            $controller->renderGiaoDienChiTietSanPham();
+            break;
+
+        case "gio-hang":
+            $controller = new CartController();
+            $controller->renderGiaoDienGioHang();
+            break;
+        case "thanh-toan":
+            $controller = new CheckoutController();
+            $controller->renderGiaoDienThanhToan();
+            break;
+        case "dang-nhap":
+            $controller = new UserController();
+            $controller->renderGiaoDienDangNhap();
+            break;
         default:
             echo "404";
             break;
